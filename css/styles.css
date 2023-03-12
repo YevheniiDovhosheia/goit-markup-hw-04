@@ -11,6 +11,16 @@ ul {
   padding-left: 0;
   margin: 0;
 }
+:root {
+  --text: #434455;
+  --second-text: #2e2f42;
+  --background: #ffffff;
+  --logo: #4d5ae5;
+  --logo-bac: #404bbf;
+  --footer-text: #e7e9fc;
+  --logo-bot: #f4f4fd;
+  --border-header: #e7effc;
+}
 button {
   cursor: pointer;
 }
@@ -21,8 +31,8 @@ address {
 body {
   text-decoration: none;
   font-family: Roboto, sans-serif;
-  color: #434455;
-  background: #ffffff;
+  color: var(--text);
+  background: var(--background);
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
@@ -53,44 +63,39 @@ img {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--logo);
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-top {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #2e2f42;
-  margin-right: 76px;
+  color: var(--second-text);
 }
 /* Header nav */
 .link-nav {
   list-style: none;
-  color: #2e2f42;
+  color: var(--second-text);
   font-weight: 500;
 }
 .link-nav:hover,
 .link-nav:focus {
-  color: #404bbf;
+  color: var(--logo-bac);
 }
 .link-addres {
   list-style: none;
-  color: #434455;
+  color: var(--text);
+  font-weight: 400;
 }
 .link-addres:hover,
 .link-addres:focus {
-  color: #404bbf;
+  color: var(--logo-bac);
 }
 .address {
   font-style: normal;
 }
 .header {
-  box-sizing: border-box;
   height: 72px;
-  background: #ffffff;
-  border-bottom: 1px solid #e7effc;
+  background: var(--background);
+  border-bottom: 1px solid var(--border-header);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -112,7 +117,7 @@ img {
 }
 /* Footer */
 .footer {
-  background: #2e2f42;
+  background: var(--second-text);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -122,19 +127,25 @@ img {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #f4f4fd;
+  color: var(--logo-bot);
 }
 .footer-text {
-  color: #e7e9fc;
-  font-size: 16px;
-  line-height: 1.5;
+  color: var(--footer-text);
   margin-top: 18px;
   width: 264px;
-  height: 72px;
+}
+.footer-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  width: 264px;
 }
 /* page-1 */
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--second-text);
+  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .visually-hidden {
   position: absolute;
@@ -154,25 +165,21 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--background);
   margin: 0 auto;
   width: 496px;
   height: 120px;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
-.hero-container {
-  height: 600px;
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
+
 .servise-but {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--background);
+  background: var(--logo);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -182,14 +189,11 @@ img {
   align-items: center;
   margin: auto;
   display: block;
+  border: 0;
 }
 .servise-but:hover,
 .servise-but:focus {
-  background: #404bbf;
-}
-
-.features-container {
-  height: 104px;
+  background: var(--logo-bac);
 }
 .features-list {
   display: flex;
@@ -204,31 +208,29 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-  width: 264px;
-  height: 24px;
-  margin-top: 32px;
+  color: var(--second-text);
   margin-bottom: 8px;
 }
 .features-text {
-  width: 264px;
-  height: 72px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 .example-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team {
-  background: #f4f4fd;
+  background: var(--logo-bot);
 }
 .team-list {
   display: flex;
   gap: 24px;
+  width: calc((100% - 96px) / 4);
 }
 .img-item {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text);
 }
 .section-head {
   text-align: center;
@@ -236,26 +238,30 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--second-text);
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+.section.example {
+  padding-top: 0;
+}
 .section-list {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 .team-text {
-  background: #ffffff;
+  background: var(--background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  width: 264px;
-  height: 380px;
   text-align: center;
 }
-
+.img-team-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 /* page-2 */
 .section.portfolio {
   padding-top: 96px;
@@ -274,9 +280,8 @@ img {
   row-gap: 48px;
 }
 .img-text {
-  background: #ffffff;
-  border: 1px solid #e7e9fc;
-  height: 420px;
+  background: var(--background);
+  border-bottom: 1px solid var(--footer-text);
 }
 .nav-but {
   font-family: "Roboto", sans-serif;
@@ -284,35 +289,36 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #4d5ae5;
-  background: #f4f4fd;
+  color: var(--logo);
+  background: var(--logo-bot);
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text);
   border-radius: 4px;
   padding: 12px 24px;
 }
 .nav-but:hover,
 .nav-but:focus {
-  color: #ffffff;
-  background: #404bbf;
+  color: var(--background);
+  background: var(--logo-bac);
   cursor: pointer;
 }
 .nav-list {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2e2f42;
+  color: var(--second-text);
   letter-spacing: 0.02em;
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
 }
 .list-description {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #434455;
-  margin-bottom: 32px;
-  margin-left: 16px;
+  color: var(--text);
+}
+.nav-list-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
