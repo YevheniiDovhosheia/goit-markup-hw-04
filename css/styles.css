@@ -131,6 +131,7 @@ img {
 }
 .footer-text {
   color: var(--footer-text);
+  width: 264px;
 }
 .footer-list {
   padding-top: 32px;
