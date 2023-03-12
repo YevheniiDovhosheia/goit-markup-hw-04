@@ -131,14 +131,16 @@ img {
 }
 .footer-text {
   color: var(--footer-text);
-  margin-top: 18px;
-  width: 264px;
 }
 .footer-list {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
   width: 264px;
+}
+.logo.link.bot {
+  margin-bottom: 18px;
+  display: inline-block;
 }
 /* page-1 */
 .hero {
@@ -281,7 +283,8 @@ img {
 }
 .img-text {
   background: var(--background);
-  border-bottom: 1px solid var(--footer-text);
+
+  width: calc((100% - 48px) / 3);
 }
 .nav-but {
   font-family: "Roboto", sans-serif;
@@ -321,4 +324,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border-right: 1px solid var(--footer-text);
+  border-left: 1px solid var(--footer-text);
+  border-bottom: 1px solid var(--footer-text);
 }
