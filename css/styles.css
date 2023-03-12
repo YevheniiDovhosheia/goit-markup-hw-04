@@ -131,12 +131,8 @@ img {
 }
 .footer-text {
   color: var(--footer-text);
-  width: 264px;
 }
 .footer-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
   width: 264px;
 }
 .logo.link.bot {
