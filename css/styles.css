@@ -252,6 +252,7 @@ img {
 }
 .about-features {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: var(--logo-bot);
   border-radius: 4px;
@@ -358,18 +359,19 @@ img {
 }
 .customers-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--icon);
   border: 1px solid var(--icon);
   border-radius: 4px;
+  height: 100%;
 }
 .icon-item {
-  width: 100%;
-  height: 100%;
   fill: currentColor;
 }
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--logo-bac);
+  color: var(--logo-bac);
   border: 1px solid var(--logo-bac);
 }
 
